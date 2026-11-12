@@ -2,17 +2,17 @@
 class Rmctl < Formula
   desc "Command-line client for the reMarkable cloud"
   homepage "https://github.com/altessa-s/rmctl"
-  version "1.2.1"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.2.1/rmctl_1.2.1_darwin_arm64.zip"
-      sha256 "306d90f31da9a219aa0e66db5d8077e544dae3bfc73a206bec695ece1b5c2149"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.0/rmctl_1.3.0_darwin_arm64.zip"
+      sha256 "e19fe01177753998ee8c8def05a0ece945198fe9fe25caba61ab06dc3575d6b1"
     end
     on_intel do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.2.1/rmctl_1.2.1_darwin_amd64.zip"
-      sha256 "010dd86a44eb5dd2e6970422373c90ebcd6b4e6d77e8553dbaa62ef671195467"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.0/rmctl_1.3.0_darwin_amd64.zip"
+      sha256 "15c537282a5ce972e249329177eab3d62e3c140b88c4af3fb6445ffb97ce93a3"
     end
   end
 
@@ -24,12 +24,12 @@ class Rmctl < Formula
     depends_on "pango"
 
     on_arm do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.2.1/rmctl_1.2.1_linux_arm64.tar.gz"
-      sha256 "db487c4249b49e37a539c1df24fe35b2768a1203a99fece03fad6c8c92344060"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.0/rmctl_1.3.0_linux_arm64.tar.gz"
+      sha256 "fff4e55a769c245ea07daa48491aa3a93200d3cc7bb95e6212ba58c9df39b365"
     end
     on_intel do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.2.1/rmctl_1.2.1_linux_amd64.tar.gz"
-      sha256 "24340efa0f74b08937b6b5466d590111c22a8910578eb195c563252d1831cc41"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.0/rmctl_1.3.0_linux_amd64.tar.gz"
+      sha256 "ded1a802cb3d6a39a6a5c9810025cfcd82d8b229ac86be12a479166f23cee2bb"
     end
   end
 
@@ -42,7 +42,15 @@ class Rmctl < Formula
     else
       bin.install "rmctl"
     end
+    generate_completions_from_executable(bin/"rmctl", "completion")
     doc.install "licenses" if File.directory?("licenses")
+  end
+
+  service do
+    run [opt_bin/"rmctl", "mirror", "run", "--service"]
+    keep_alive successful_exit: false
+    log_path var/"log/rmctl-mirror.log"
+    error_log_path var/"log/rmctl-mirror.log"
   end
 
   test do
