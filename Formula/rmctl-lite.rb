@@ -2,28 +2,28 @@
 class RmctlLite < Formula
   desc "Command-line client for the reMarkable cloud, without rendering"
   homepage "https://github.com/altessa-s/rmctl"
-  version "1.3.1"
+  version "1.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl-lite_1.3.1_darwin_arm64.zip"
-      sha256 "acd27635bfb70df6322fd33b0f9d73b4e94e7cd130450986dcc5597c9c628391"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl-lite_1.3.2_darwin_arm64.zip"
+      sha256 "3e71d1ce5132c532530910da6afe36dd4d070cce139a49b119ee8458b4625292"
     end
     on_intel do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl-lite_1.3.1_darwin_amd64.zip"
-      sha256 "40b9a0c82c9b8b9475f110d146d43a33bab23a3e8a1571723a49a889d77ec5f7"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl-lite_1.3.2_darwin_amd64.zip"
+      sha256 "1a4e488b57284d678df8d0fe08882a4bc4aa0ddea8e7ab90e8c659ba061f9e95"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl-lite_1.3.1_linux_arm64.tar.gz"
-      sha256 "3f4e279dc2e12ebf79bf7eaee67eb5a2d5e43f9e6bb06092af6cb417a9281352"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl-lite_1.3.2_linux_arm64.tar.gz"
+      sha256 "57dd74a23474bad902b2fe0a0cbf2ddc5693d918133797de819a98b483353575"
     end
     on_intel do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl-lite_1.3.1_linux_amd64.tar.gz"
-      sha256 "caf0d27f747659e4a9577fe3c9e7c674a39506cb1f6d3601ca14c8a815fc409b"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl-lite_1.3.2_linux_amd64.tar.gz"
+      sha256 "0b6e3401bfdcf0355ac8d4ff657ae8a2f528edb2552b494b0ba54b46371da121"
     end
   end
 

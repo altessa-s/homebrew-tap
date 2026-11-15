@@ -2,17 +2,17 @@
 class Rmctl < Formula
   desc "Command-line client for the reMarkable cloud"
   homepage "https://github.com/altessa-s/rmctl"
-  version "1.3.1"
+  version "1.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl_1.3.1_darwin_arm64.zip"
-      sha256 "6eeb84d38a79650a3d067b365a9c3d59527f59200e60bdda044a7684457b4d9b"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl_1.3.2_darwin_arm64.zip"
+      sha256 "0c4498924643b4de4fbe839f64ab36b8eafd2c6918b7a5f571143c34a16d52be"
     end
     on_intel do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl_1.3.1_darwin_amd64.zip"
-      sha256 "41dd101335e0aa2069fb4e27db73c5d5bed0d29e17968b4854fff25c9015922c"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl_1.3.2_darwin_amd64.zip"
+      sha256 "a18f192688e50aae960cf30275fe23dbe1886d76e5079d4c60ef0ddc5ecb28f1"
     end
   end
 
@@ -24,12 +24,12 @@ class Rmctl < Formula
     depends_on "pango"
 
     on_arm do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl_1.3.1_linux_arm64.tar.gz"
-      sha256 "4982dbcbd13a1422c407622010c3479a5b61ad7466609a21b6ae8e5ad0542687"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl_1.3.2_linux_arm64.tar.gz"
+      sha256 "deed879f4b6bcb0ca75c1621350f5aa1c05302247161ea3c50b5c468bdfbfda5"
     end
     on_intel do
-      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.1/rmctl_1.3.1_linux_amd64.tar.gz"
-      sha256 "20d8f32512646fa23b5180bdd15264fa53a16cb271361426915e113322123458"
+      url "https://github.com/altessa-s/rmctl/releases/download/v1.3.2/rmctl_1.3.2_linux_amd64.tar.gz"
+      sha256 "963eb6fd9e0501f8723b7e20537d40488a2aa14b16f3bd62a28848c4d7c99cc1"
     end
   end
 
