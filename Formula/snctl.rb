@@ -2,17 +2,17 @@
 class Snctl < Formula
   desc "Command-line client for the Supernote cloud"
   homepage "https://github.com/altessa-s/snctl"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/altessa-s/snctl/releases/download/v1.0.0/snctl_1.0.0_darwin_arm64.zip"
-      sha256 "3a263fab0f04b116633bc8a5ccc2b58bafa3ddf60433825ec19b5943b3fc24c5"
+      url "https://github.com/altessa-s/snctl/releases/download/v1.0.1/snctl_1.0.1_darwin_arm64.zip"
+      sha256 "27ffa35baf3767ed005fdb608e7b738c9147c0d14b27b85745eadc3659353e8b"
     end
     on_intel do
-      url "https://github.com/altessa-s/snctl/releases/download/v1.0.0/snctl_1.0.0_darwin_amd64.zip"
-      sha256 "8b496df71f0e8d60081b7ebaff59b0be819a85bffc77822fd6d6e5156021a59d"
+      url "https://github.com/altessa-s/snctl/releases/download/v1.0.1/snctl_1.0.1_darwin_amd64.zip"
+      sha256 "3d9c9a73d20b6826216ed454d8a5746c5842e63c5c7682bafbfceba990ac8fc4"
     end
   end
 
@@ -22,12 +22,12 @@ class Snctl < Formula
     depends_on "freetype"
 
     on_arm do
-      url "https://github.com/altessa-s/snctl/releases/download/v1.0.0/snctl_1.0.0_linux_arm64.tar.gz"
-      sha256 "a374c34dc4d3b309a70dfaedc846ac2291af7e865c2b042b10b2424c3a3fb91a"
+      url "https://github.com/altessa-s/snctl/releases/download/v1.0.1/snctl_1.0.1_linux_arm64.tar.gz"
+      sha256 "c44b434dbeaa277a955d8977d161ff6eff8386a89eff083c4f06a5c82e4df4ea"
     end
     on_intel do
-      url "https://github.com/altessa-s/snctl/releases/download/v1.0.0/snctl_1.0.0_linux_amd64.tar.gz"
-      sha256 "2f403ddcc1256634cfebb73da00b66e067339d04570577e7aeea98a09d3f9dc8"
+      url "https://github.com/altessa-s/snctl/releases/download/v1.0.1/snctl_1.0.1_linux_amd64.tar.gz"
+      sha256 "144aacd434a811574e0c126170f152c5cb4f48620c2ce64b2199a75885c2a466"
     end
   end
 
